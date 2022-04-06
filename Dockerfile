@@ -7,6 +7,6 @@ RUN go build
 FROM alpine
 RUN adduser -S -D -H -h /app appuser
 USER appuser
-COPY --from=builder /build/hello /app/
+COPY --from=builder /build/codeeducation /app/
 WORKDIR /app
 CMD ["./hello"]

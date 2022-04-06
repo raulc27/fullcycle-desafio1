@@ -9,4 +9,4 @@ RUN adduser -S -D -H -h /app appuser
 USER appuser
 COPY --from=builder /build/codeeducation /app/
 WORKDIR /app
-CMD ["./hello"]
+CMD ["./codeeducation"]
